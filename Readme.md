@@ -209,7 +209,7 @@ GET /logs/stats
 Authorization: Bearer <admin_token>
 ```
 
-## Role-Based Access Control
+## Role-Based Access Control (RBAC)
 
 ### Role Hierarchy
 - **Admin**: Full access to all endpoints including audit logs
