@@ -1,8 +1,8 @@
 # Blinkit Backend - Role-Based Access Control API
 
-A comprehensive Express.js backend application implementing role-based access control (RBAC) with JWT authentication, audit logging, and MongoDB integration.
+A full Express.js backend app that uses role-based access control (RBAC) and includes JWT login, audit logging, and MongoDB integration.
 
-## 🚀 Features
+## Features
 
 - **User Authentication** (Registration & Login)
 - **Role-Based Access Control** (Admin, Manager, User)
@@ -13,7 +13,7 @@ A comprehensive Express.js backend application implementing role-based access co
 - **Client Information Tracking** (IP, User Agent)
 - **Log Statistics & Analytics**
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB with Mongoose
@@ -23,7 +23,7 @@ A comprehensive Express.js backend application implementing role-based access co
 - **Validation:** Validator.js
 - **Environment Management:** dotenv
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before running this application, make sure you have the following installed:
 
@@ -31,7 +31,7 @@ Before running this application, make sure you have the following installed:
 - MongoDB (local installation or MongoDB Atlas)
 - npm or yarn package manager
 
-## ⚙️ Environment Variables
+## Environment Variables
 
 Create a `.env` file in the root directory and add the following variables:
 
@@ -45,10 +45,10 @@ CONNECTION_STRING=mongodb://localhost:27017/blinkit_db
 JWT_SECRET=your_super_secret_jwt_key_here
 
 # Server Configuration
-PORT=7002
+PORT=7001
 ```
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the Repository
 ```bash
@@ -86,15 +86,15 @@ npm run dev
 npm start
 ```
 
-The server will start on `http://localhost:7002`
+The server will start on `http://localhost:7001`
 
-## 🧪 Running Tests
+## Running Tests
 
 ### Manual Testing with Postman
 
 1. Import the Postman collection: `Blinkit_Backend_Collection.postman_collection.json`
 2. Set up environment variables in Postman:
-   - `Base_URL`: `http://localhost:7002/api`
+   - `Base_URL`: `http://localhost:7001/api`
 3. Run the test scenarios in the following order:
    - User Registration
    - User Login
@@ -128,11 +128,11 @@ Use these sample accounts for testing:
 }
 ```
 
-## 📖 API Usage Guide
+## API Usage Guide
 
 ### Base URL
 ```
-http://localhost:7002/api
+http://localhost:7001/api
 ```
 
 ### Authentication Endpoints
@@ -209,7 +209,7 @@ GET /logs/stats
 Authorization: Bearer <admin_token>
 ```
 
-## 🔐 Role-Based Access Control
+## Role-Based Access Control
 
 ### Role Hierarchy
 - **Admin**: Full access to all endpoints including audit logs
@@ -251,7 +251,7 @@ The application automatically logs the following events:
 }
 ```
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 src/
@@ -276,7 +276,7 @@ src/
 └── logs/                     # Log files directory
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### Database Configuration
 The application uses MongoDB with Mongoose. Configure your connection string in the `.env` file:
@@ -297,9 +297,9 @@ JWT_SECRET=your_super_secret_jwt_key_here
 // Token expires in 1 hour (configured in authController.js)
 ```
 
-## 🚨 Error Handling
+## Error Handling
 
-The application includes comprehensive error handling for:
+The program has extensive error-handling capabilities for:
 
 - **Validation Errors**: Invalid email format, missing fields
 - **Authentication Errors**: Invalid credentials, expired tokens
@@ -307,7 +307,7 @@ The application includes comprehensive error handling for:
 - **Database Errors**: Connection issues, duplicate entries
 - **Server Errors**: Internal server errors with appropriate logging
 
-## 📝 Sample Data
+## Sample Data
 
 ### User Registration Samples
 ```json
@@ -333,7 +333,7 @@ The application includes comprehensive error handling for:
 }
 ```
 
-## 🔍 Health Check
+## Health Check
 
 The application provides a health check endpoint:
 
@@ -349,7 +349,7 @@ GET /health
 }
 ```
 
-## 🛡️ Security Features
+## Security Features
 
 - **Password Hashing**: Using bcryptjs with salt rounds
 - **JWT Authentication**: Secure token-based authentication
@@ -358,7 +358,7 @@ GET /health
 - **Audit Logging**: Comprehensive security event tracking
 - **IP Tracking**: Client IP and User Agent logging
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -383,18 +383,8 @@ GET /health
    - Verify user role has required permissions
    - Check if token belongs to correct user role
 
-## 📄 License
 
-This project is licensed under the MIT License.
 
-## 👥 Contributing
+## 📞 Thanks
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## 📞 Support
-
-For support and questions, please create an issue in the repository or contact the development team.
+  --Harsh Aggarwal
