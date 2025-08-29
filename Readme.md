@@ -385,6 +385,6 @@ GET /health
 
 
 
-## 📞 Thanks
+## Thanks
 
-  --Harsh Aggarwal
+    Harsh Aggarwal
