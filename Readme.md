@@ -1,4 +1,4 @@
-# Blinkit Backend - Role-Based Access Control API
+# secureBlink Backend - Role-Based Access Control API
 
 A full Express.js backend app that uses role-based access control (RBAC) and includes JWT login, audit logging, and MongoDB integration.
 
@@ -37,9 +37,9 @@ Create a `.env` file in the root directory and add the following variables:
 
 ```env
 # Database Configuration
-CONNECTION_STRING=mongodb://localhost:27017/blinkit_db
+CONNECTION_STRING=mongodb://localhost:27017/secureBlink_db
 # or for MongoDB Atlas:
-# CONNECTION_STRING=mongodb+srv://username:password@cluster.mongodb.net/blinkit_db
+# CONNECTION_STRING=mongodb+srv://username:password@cluster.mongodb.net/secureBlink_db
 
 # JWT Configuration
 JWT_SECRET=your_super_secret_jwt_key_here
@@ -53,7 +53,7 @@ PORT=7001
 ### 1. Clone the Repository
 ```bash
 git clone <repository-url>
-cd blinkit-backend
+cd secureBlink-backend
 ```
 
 ### 2. Install Dependencies
@@ -92,7 +92,7 @@ The server will start on `http://localhost:7001`
 
 ### Manual Testing with Postman
 
-1. Import the Postman collection: `Blinkit_Backend_Collection.postman_collection.json`
+1. Import the Postman collection: `secureBlink_Backend_Collection.postman_collection.json`
 2. Set up environment variables in Postman:
    - `Base_URL`: `http://localhost:7001/api`
 3. Run the test scenarios in the following order:
@@ -283,10 +283,10 @@ The application uses MongoDB with Mongoose. Configure your connection string in 
 
 ```javascript
 // Local MongoDB
-CONNECTION_STRING=mongodb://localhost:27017/blinkit_db
+CONNECTION_STRING=mongodb://localhost:27017/secureBlink_db
 
 // MongoDB Atlas
-CONNECTION_STRING=mongodb+srv://username:password@cluster.mongodb.net/blinkit_db
+CONNECTION_STRING=mongodb+srv://username:password@cluster.mongodb.net/secureBlink_db
 ```
 
 ### JWT Configuration
