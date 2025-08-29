@@ -1,0 +1,10 @@
+# Logs and runtime files
+logs/
+*.log
+*.json.log
+
+# Environment variables
+.env
+
+# Node modules
+node_modules/

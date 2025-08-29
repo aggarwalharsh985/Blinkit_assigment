@@ -1,0 +1,1621 @@
+{
+	"info": {
+		"_postman_id": "c088cad6-7a9e-4f1b-a75f-ff2bc6c437d0",
+		"name": "Blinkit_Backend_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35369536"
+	},
+	"item": [
+		{
+			"name": "Pre-Login APIs",
+			"item": [
+				{
+					"name": "Registration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"user@gmail.com\",\r\n  \"password\": \"user123\",\r\n  \"role\": \"user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_URL}}/auth/register",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "user",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"user@gmail.com\",\r\n  \"password\": \"user123\",\r\n  \"role\": \"user\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Base_URL}}/auth/register",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "55"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37-2A8UDoMInbCa5b0ybWkcP5PG9Tg\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 06:43:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User registered with email user@gmail.com\"\n}"
+						},
+						{
+							"name": "admin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"admin@gmail.com\",\r\n  \"password\": \"admin123\",\r\n  \"role\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Base_URL}}/auth/register",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "56"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"38-Bw0nz0nRx6zhtdIxyWmSHV4whjA\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 06:44:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User registered with email admin@gmail.com\"\n}"
+						},
+						{
+							"name": "manager",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"manager@gmail.com\",\r\n  \"password\": \"manager123\",\r\n  \"role\": \"manager\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Base_URL}}/auth/register",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-k91lO5m6Otl6V2+qlM65M/bpAik\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 06:44:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User registered with email manager@gmail.com\"\n}"
+						},
+						{
+							"name": "Duplicate",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"manager@gmail.com\",\r\n  \"password\": \"manager123\",\r\n  \"role\": \"manager\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Base_URL}}/auth/register",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "346"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15a-6Y0lNpO9PKko7LKi40/vik2244U\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 06:46:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": {\n        \"errorLabelSet\": {},\n        \"errorResponse\": {\n            \"index\": 0,\n            \"code\": 11000,\n            \"errmsg\": \"E11000 duplicate key error collection: test.users index: email_1 dup key: { email: \\\"manager@gmail.com\\\" }\",\n            \"keyPattern\": {\n                \"email\": 1\n            },\n            \"keyValue\": {\n                \"email\": \"manager@gmail.com\"\n            }\n        },\n        \"index\": 0,\n        \"code\": 11000,\n        \"keyPattern\": {\n            \"email\": 1\n        },\n        \"keyValue\": {\n            \"email\": \"manager@gmail.com\"\n        }\n    }\n}"
+						},
+						{
+							"name": "Invalid_email",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"managergmail.com\",\r\n  \"password\": \"manager123\",\r\n  \"role\": \"manager\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Base_URL}}/auth/register",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "35"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23-Vfk30x6Zx9kBsQYIJfoV1Hb0EDE\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 06:48:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Invalid email address\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"manager@gmail.com\",\r\n  \"password\": \"manager123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_URL}}/auth/login",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Manager_login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"manager@gmail.com\",\r\n  \"password\": \"manager123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Base_URL}}/auth/login",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "507"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1fb-zk34R0NP0XyjTsNiMOd3XJ+goFo\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 06:41:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjBkMmMzOTI0MDMxNjEzNzAwODVlMSIsInJvbGUiOiJtYW5hZ2VyIiwiaWF0IjoxNzU2NDQ5NjY5LCJleHAiOjE3NTY0NTMyNjl9.SBVQBZgAjsM3CTqN4MgSzp3OeJ5hYHxjCsAiZqIM2ZI\",\n    \"message\": \"Welcome manager@gmail.com\",\n    \"user\": {\n        \"_id\": \"68b0d2c392403161370085e1\",\n        \"email\": \"manager@gmail.com\",\n        \"password\": \"$2b$10$bdOW.VdrS.vlQFBm1sF.w.37vyLv2BJr91UBXKMzNazb2jYZvV5L2\",\n        \"role\": \"manager\",\n        \"createdAt\": \"2025-08-28T22:05:55.096Z\",\n        \"updatedAt\": \"2025-08-28T22:05:55.096Z\",\n        \"__v\": 0\n    },\n    \"success\": \"true\"\n}"
+						},
+						{
+							"name": "admin_login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"admin@gmail.com\",\r\n  \"password\": \"admin123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Base_URL}}/auth/login",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "499"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1f3-vO1oF9aTiU+mZlARL6/mt7ROomk\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 06:49:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjE0YzM4NTZlMGI3YzM4NjA4OTA1NCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NjQ1MDE4MywiZXhwIjoxNzU2NDUzNzgzfQ.iimXqTd3T2xasYYPZNI6kSwqbFlruSKWKztVgsPnMaA\",\n    \"message\": \"Welcome admin@gmail.com\",\n    \"user\": {\n        \"_id\": \"68b14c3856e0b7c386089054\",\n        \"email\": \"admin@gmail.com\",\n        \"password\": \"$2b$10$mfbHRQc3tdsAQihsme4E9epZxoWyDJqFGLhqT.N/oRFtXG4POSKL.\",\n        \"role\": \"admin\",\n        \"createdAt\": \"2025-08-29T06:44:08.181Z\",\n        \"updatedAt\": \"2025-08-29T06:44:08.181Z\",\n        \"__v\": 0\n    },\n    \"success\": \"true\"\n}"
+						},
+						{
+							"name": "User_login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"user@gmail.com\",\r\n  \"password\": \"user123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Base_URL}}/auth/login",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "494"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1ee-ZG7d4CRkzfdKy3h/+78r8+lWB80\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 06:52:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjE0YzFhYzE5NTkxZTUwYzIwOGE4MiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU2NDUwMzY0LCJleHAiOjE3NTY0NTM5NjR9.YE5xQJ2sAUbg8MVB8HpKkHwHzpVrIS_kjUqqR638Zd0\",\n    \"message\": \"Welcome user@gmail.com\",\n    \"user\": {\n        \"_id\": \"68b14c1ac19591e50c208a82\",\n        \"email\": \"user@gmail.com\",\n        \"password\": \"$2b$10$oRC3.MH24DwwQfNcqcIcjeCoM4SMU4SfGjywThYQJveRridz51J/S\",\n        \"role\": \"user\",\n        \"createdAt\": \"2025-08-29T06:43:38.991Z\",\n        \"updatedAt\": \"2025-08-29T06:43:38.991Z\",\n        \"__v\": 0\n    },\n    \"success\": \"true\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Post-Login APIs",
+			"item": [
+				{
+					"name": "User Dashboard",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjBkMmRkMmE4Y2FjYWNhN2Y1NGEzYyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NjQxOTY5NiwiZXhwIjoxNzU2NDIzMjk2fQ.W7JKlLp882OeDwaBR3LTJRvA4cEITb9O42mLb8YEH4U",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{Base_URL}}/users/user",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"users",
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successfull_login",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjE0YzFhYzE5NTkxZTUwYzIwOGE4MiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU2NDUwMzY0LCJleHAiOjE3NTY0NTM5NjR9.YE5xQJ2sAUbg8MVB8HpKkHwHzpVrIS_kjUqqR638Zd0",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{Base_URL}}/users/user",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"users",
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "26"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a-QOtVnaUORv6N0wwzCi3R0lNK2QE\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 07:00:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Welcome user\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Manager Dashboard",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjBkMmMzOTI0MDMxNjEzNzAwODVlMSIsInJvbGUiOiJtYW5hZ2VyIiwiaWF0IjoxNzU2NDE5OTI2LCJleHAiOjE3NTY0MjM1MjZ9.DQEVWqFs9uK8J4gH07ytuBBbOiXjAaRSeoJEVgj3e8w",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Base_URL}}/users/manager?a",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"users",
+								"manager"
+							],
+							"query": [
+								{
+									"key": "a",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successfull_login",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjBkMmMzOTI0MDMxNjEzNzAwODVlMSIsInJvbGUiOiJtYW5hZ2VyIiwiaWF0IjoxNzU2NDQ5NjY5LCJleHAiOjE3NTY0NTMyNjl9.SBVQBZgAjsM3CTqN4MgSzp3OeJ5hYHxjCsAiZqIM2ZI",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{Base_URL}}/users/manager",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"users",
+										"manager"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "29"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1d-JI6fAypoP4pbox2ZoYnY8EAaDIM\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 07:08:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Welcome manager\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Admin Dashboard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Base_URL}}/users/admin",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"users",
+								"admin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successfull_login",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjE0YzM4NTZlMGI3YzM4NjA4OTA1NCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NjQ1MDE4MywiZXhwIjoxNzU2NDUzNzgzfQ.iimXqTd3T2xasYYPZNI6kSwqbFlruSKWKztVgsPnMaA",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Base_URL}}/users/admin",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"users",
+										"admin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "27"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1b-66jp/spqpKzt07MHLOlMt19dK0I\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 07:10:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Welcome admin\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Invalid",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Invalid_Token",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer JhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjBkMmRkMmE4Y2FjYWNhN2Y1NGEzYyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NjQxOTY5NiwiZXhwIjoxNzU2NDIzMjk2fQ.W7JKlLp882OeDwaBR3LTJRvA4cEITb9O42mLb8YEH4U",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{Base_URL}}/users/user",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"users",
+										"user"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "32"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"20-STwq+yrPj9nApV+vuN/n4hNNfLU\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 07:22:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Token is not valid\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Protected Routes Testing",
+			"item": [
+				{
+					"name": "User_Role_Access",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjBkMmMzOTI0MDMxNjEzNzAwODVlMSIsInJvbGUiOiJtYW5hZ2VyIiwiaWF0IjoxNzU2NDE5OTI2LCJleHAiOjE3NTY0MjM1MjZ9.DQEVWqFs9uK8J4gH07ytuBBbOiXjAaRSeoJEVgj3e8w",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Base_URL}}/users/admin",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"users",
+								"admin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User_Access",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjE0YzFhYzE5NTkxZTUwYzIwOGE4MiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU2NDUwMzY0LCJleHAiOjE3NTY0NTM5NjR9.YE5xQJ2sAUbg8MVB8HpKkHwHzpVrIS_kjUqqR638Zd0",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{Base_URL}}/users/user",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"users",
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "26"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a-QOtVnaUORv6N0wwzCi3R0lNK2QE\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 07:29:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Welcome user\"\n}"
+						},
+						{
+							"name": "Manager_Access",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjE0YzYwOGViZjMxNDMwZDA4MjFlZSIsInJvbGUiOiJtYW5hZ2VyIiwiaWF0IjoxNzU2NDU0MzA3LCJleHAiOjE3NTY0NTc5MDd9.39pwraxXTeiujkWmBdq04Axbq6WZwvJ_TKw1lMtjlbw",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{Base_URL}}/users/user",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"users",
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "26"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a-QOtVnaUORv6N0wwzCi3R0lNK2QE\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 07:58:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Welcome user\"\n}"
+						},
+						{
+							"name": "Admin_Acess",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjE0YzM4NTZlMGI3YzM4NjA4OTA1NCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NjQ1NDM2NywiZXhwIjoxNzU2NDU3OTY3fQ.HuUhmFpQg2mJVlSRoDmM_3OsdZhT9wiZNHoumnNHzAM",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{Base_URL}}/users/user",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"users",
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "26"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a-QOtVnaUORv6N0wwzCi3R0lNK2QE\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 07:59:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Welcome user\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Manager_Role_Access",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "user",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjE0YzFhYzE5NTkxZTUwYzIwOGE4MiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU2NDU0NTYzLCJleHAiOjE3NTY0NTgxNjN9.LPSOfIhYJA5WLhqTHsYvx5A1QXaHzhRQduKqEKbPPBs",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{Base_URL}}/users/manager",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"users",
+										"manager"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "27"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1b-iBx/SnAbP76moSKyn7jijRK2KE8\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 08:02:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Access denied\"\n}"
+						},
+						{
+							"name": "manager",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjE0YzYwOGViZjMxNDMwZDA4MjFlZSIsInJvbGUiOiJtYW5hZ2VyIiwiaWF0IjoxNzU2NDU0NjM4LCJleHAiOjE3NTY0NTgyMzh9.eQUl7qXaDK-JrfUxLXVfxESc1p4MvowIndE4kg7m-V0",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{Base_URL}}/users/manager",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"users",
+										"manager"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "29"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1d-JI6fAypoP4pbox2ZoYnY8EAaDIM\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 08:04:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Welcome manager\"\n}"
+						},
+						{
+							"name": "admin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjE0YzM4NTZlMGI3YzM4NjA4OTA1NCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NjQ1NDY4MSwiZXhwIjoxNzU2NDU4MjgxfQ.fp6b_h2dNNCSaHcjBZe11-b6CaezNsHotNdzwGC3BWs",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{Base_URL}}/users/manager",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"users",
+										"manager"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "29"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1d-JI6fAypoP4pbox2ZoYnY8EAaDIM\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 08:04:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Welcome manager\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Admin_Role_Access",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "admin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjE0YzM4NTZlMGI3YzM4NjA4OTA1NCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NjQ1NDgwNSwiZXhwIjoxNzU2NDU4NDA1fQ.xpzL0WFEW0YqYNwl0nOeFgaWtxUMmPBCzHJy1S7rv18",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{Base_URL}}/users/admin",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"users",
+										"admin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "27"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1b-66jp/spqpKzt07MHLOlMt19dK0I\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 08:07:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Welcome admin\"\n}"
+						},
+						{
+							"name": "manager",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjE0YzYwOGViZjMxNDMwZDA4MjFlZSIsInJvbGUiOiJtYW5hZ2VyIiwiaWF0IjoxNzU2NDU0OTIxLCJleHAiOjE3NTY0NTg1MjF9.fI0pOcSzyCidF_W4JWVifQ7r2B8TVhhxMAFKf7c85DU",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{Base_URL}}/users/admin",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"users",
+										"admin"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "27"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1b-iBx/SnAbP76moSKyn7jijRK2KE8\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 08:09:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Access denied\"\n}"
+						},
+						{
+							"name": "user",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjE0YzFhYzE5NTkxZTUwYzIwOGE4MiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU2NDU0OTgwLCJleHAiOjE3NTY0NTg1ODB9.A2b4GuJqlRbW3NrHAFnKntfgaVzYfwOZ8ocF-ER7FEM",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{Base_URL}}/users/admin",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"users",
+										"admin"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "27"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1b-iBx/SnAbP76moSKyn7jijRK2KE8\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Aug 2025 08:09:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Access denied\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Audit Log Management",
+			"item": [
+				{
+					"name": "View All Audit Logs",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Log Statistics",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YjBkMmRkMmE4Y2FjYWNhN2Y1NGEzYyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NjQxOTY5NiwiZXhwIjoxNzU2NDIzMjk2fQ.W7JKlLp882OeDwaBR3LTJRvA4cEITb9O42mLb8YEH4U",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{Base_URL}}/logs/stats",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"logs",
+								"stats"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sample",
+			"item": [
+				{
+					"name": "user register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"sampleUser@gmail.com\",\r\n    \"password\": \"sampleUser123\",\r\n    \"role\": \"user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_URL}}/auth/register",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"sampleAdmin@gmail.com\",\r\n    \"password\": \"sampleAdmin\",\r\n    \"role\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_URL}}/auth/register",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"sampleUser@gmail.com\",\r\n    \"password\": \"sampleUser123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Base_URL}}/auth/login",
+							"host": [
+								"{{Base_URL}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "admin login",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "RBAC_check",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Log access",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
