@@ -1,4 +1,4 @@
-# secureBlink Backend - Role-Based Access Control API
+# Secure-Blink Backend - Role-Based Access Control API
 
 A full Express.js backend app that uses role-based access control (RBAC) and includes JWT login, audit logging, and MongoDB integration.
 
