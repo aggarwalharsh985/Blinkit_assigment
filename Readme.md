@@ -386,5 +386,4 @@ GET /health
 
 
 ## Thanks
-
-    Harsh Aggarwal
+Harsh Aggarwal
